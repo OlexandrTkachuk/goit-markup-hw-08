@@ -1,0 +1,24 @@
+.address {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-right: 70px;
+}
+.footer__logo {
+  display: inline-block;
+  color: $color-white;
+  margin-bottom: 20px;
+}
+.address__location {
+  font-style: normal;
+  line-height: 1.71;
+  color: $color-white;
+}
+.address-list__link {
+  display: inline-block;
+  line-height: 1.71;
+  font-style: normal;
+  text-decoration: none;
+
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+}

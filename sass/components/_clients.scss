@@ -1,0 +1,28 @@
+.clients__title {
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+}
+.clients-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 170px;
+  min-height: 92px;
+
+  fill: $color-light-grey;
+  border: 1px solid $color-light-grey;
+  border-radius: 4px;
+
+  transition: fill 250ms $timing-function, background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $color-blue;
+    border-color: $color-blue;
+  }
+}

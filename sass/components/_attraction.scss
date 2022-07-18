@@ -1,0 +1,38 @@
+.attraction {
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+.attraction__title,
+.subscription__title {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  color: $color-white;
+  margin-bottom: 20px;
+}
+.attraction-list {
+  display: flex;
+}
+.attraction-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+.attraction-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  fill: $color-white;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $color-blue;
+  }
+}

@@ -1,0 +1,28 @@
+.work__title {
+  margin-bottom: 50px;
+}
+.work-list {
+  display: flex;
+}
+.work-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+.work-list__thumb {
+  position: relative;
+}
+.work-list__subtitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $color-white;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  padding: 27px 0;
+}
