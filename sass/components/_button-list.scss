@@ -1,7 +1,8 @@
 .button-list {
-  display: flex;
+  // display: flex;
+  // justify-content: center;
+  
   margin-bottom: 50px;
-  justify-content: center;
 }
 .button-list__item:not(:last-child) {
   margin-right: 8px;

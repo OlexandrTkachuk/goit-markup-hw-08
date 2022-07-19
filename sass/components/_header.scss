@@ -1,33 +1,80 @@
 .header {
-  min-height: 81px;
+  min-height: 60px;
   border-bottom: 1px solid #ececec;
 
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    min-height: 80px;
+  }
 }
+
 .header__page {
-  display: flex;
-  align-items: center;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
+
 .sait-nav {
+  position: relative;
   display: flex;
-  align-items: center;
 }
+
 .header__logo {
+  display: inline-block;
   color: $color-black;
 
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+
+  @media (min-width: 768px) {
+    padding-top: 25px;
+    padding-bottom: 24px;
+    margin-right: 87px;
+  }
 }
 .logo-blue {
   color: $color-blue;
 }
-.menu {
-  display: flex;
+
+.button__menu {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background-color: $color-white;
+  border: 0px;
+  padding: 0;
+  margin: 0;
+
+  cursor: pointer;
+  fill: currentColor;
+  transition: fill 250ms $timing-function;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $color-blue;
+  }
 }
+
+.menu {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .menu__item:not(:last-child) {
   margin-right: 50px;
 }
+
 .menu__link {
   position: relative;
 
@@ -36,7 +83,7 @@
   font-weight: 500;
   letter-spacing: 0.02em;
 
-  padding: 33px 0;
+  padding: 20px 0;
   transition: color 250ms $timing-function;
 
   &:hover,
@@ -44,6 +91,7 @@
     color: $color-blue;
   }
 }
+
 .menu__link::after {
   content: '';
 
@@ -61,11 +109,13 @@
   opacity: 0;
   transition: opacity 250ms $timing-function, transform 250ms $timing-function;
 }
+
 .menu__link:hover::after,
 .menu__link:focus::after {
   opacity: 1;
   transform: scaleX(1);
 }
+
 .menu__link--current {
   color: $color-blue;
 
@@ -76,21 +126,33 @@
 }
 
 .contact-list {
-  display: flex;
-  margin-left: auto;
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .contact-list__item {
   display: block;
-  justify-content: center;
-  align-items: center;
 
   &:not(:last-child) {
-    margin-right: 30px;
+    @media (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &:not(:last-child) {
+    @media (min-width: 1200px) {
+      margin-right: 30px;
+    }
   }
 }
 .contact-list__link {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   text-decoration: none;
 
@@ -104,7 +166,13 @@
   &:focus {
     color: $color-blue;
   }
+
+  @media (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
+
 .contact-list__icon {
   fill: currentColor;
   margin-right: 10px;

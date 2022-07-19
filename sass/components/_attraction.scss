@@ -7,12 +7,15 @@
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
+  text-align: center;
 
   color: $color-white;
   margin-bottom: 20px;
 }
 .attraction-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .attraction-list__item:not(:last-child) {
   margin-right: 10px;
