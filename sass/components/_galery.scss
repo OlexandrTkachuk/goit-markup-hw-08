@@ -13,20 +13,13 @@
 
   @media (min-width: 768px) {
     width: calc((100% - 2 * 15px) / 2);
+    max-width: 354px;
   }
 
   @media (min-width: 1200px) {
     width: calc((100% - 3 * 15px) / 3);
     max-width: 370px;
   }
-
-  // &:nth-child(3n) {
-  //   margin-right: 0;
-  // }
-
-  // &:nth-last-child(-n + 3) {
-  //   margin-bottom: 0;
-  // }
 
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -49,7 +42,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
 
   font-size: 18px;
   line-height: 1.56;
@@ -60,6 +52,10 @@
   transform: translateY(100%);
 
   transition: transform 250ms $timing-function;
+
+  @media (max-width: 767px) {
+    height: 100%;
+  }
 
   .galery-list__item:hover & {
     transform: translateY(0);

@@ -916,6 +916,7 @@ footer {
 @media (min-width: 768px) {
   .galery-list__item {
     width: calc((100% - 30px) / 2);
+    max-width: 354px;
   }
 }
 @media (min-width: 1200px) {
@@ -944,7 +945,6 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   font-size: 18px;
   line-height: 1.56;
   color: #ffffff;
@@ -956,6 +956,11 @@ footer {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (max-width: 767px) {
+  .galery-list__text {
+    height: 100%;
+  }
 }
 .galery-list__item:hover .galery-list__text {
   -webkit-transform: translateY(0);
