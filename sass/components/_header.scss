@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   min-height: 60px;
   border-bottom: 1px solid #ececec;
 
@@ -18,12 +19,17 @@
 }
 
 .sait-nav {
-  position: relative;
   display: flex;
+
+  @media (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .header__logo {
-  display: inline-block;
+  display: inline-flex;
   color: $color-black;
 
   padding-top: 16px;
@@ -35,18 +41,18 @@
     margin-right: 87px;
   }
 }
+
 .logo-blue {
   color: $color-blue;
 }
 
 .button__menu {
-  position: absolute;
-  top: 10px;
-  right: 0px;
-  background-color: $color-white;
+  background-color: transparent;
   border: 0px;
   padding: 0;
   margin: 0;
+  width: 40px;
+  height: 40px;
 
   cursor: pointer;
   fill: currentColor;
@@ -59,6 +65,33 @@
   &:hover,
   &:focus {
     fill: $color-blue;
+  }
+}
+
+.button__menu .icon-cross {
+  display: none;
+}
+
+.button__menu.is-open .icon-cross{
+  display: block;
+}
+
+.button__menu.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-color: tomato;
+  z-index: 1;
+
+  &.is-open {
+    display: block;
   }
 }
 

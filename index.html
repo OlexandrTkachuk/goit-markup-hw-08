@@ -25,10 +25,16 @@
 
         <a class="header__logo logo" href="index.html"><span class="logo-blue">Web</span>Studio</a>
 
-        <button class="button__menu" type="button">
-          <svg class="button__icon" width="40px" height="40px">
-            <use href="./images/icons/symbol-defs.svg#icon-menu"></use>
+        <button class="button__menu is-open" type="button" aria-expanded="false" aria-controls="menu-container"
+          data-menu-button>
+          <svg class="button__icon" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./images/icons/symbol-defs.svg#icon-menu"></use>
+            <use class="icon-cross" href="./images/icons/symbol-defs.svg#icon-cross"></use>
           </svg>
+
+          <div class="menu-container is-open" id="menu-container" data-menu>
+
+          </div>
         </button>
 
         <ul class="menu">
@@ -472,7 +478,7 @@
           <label class="checkbox__label">
             <input class="checkbox__input" type="checkbox" name="agreement">
             <span class="checkbox__icon"></span>
-            Соглашаюсь с рассылкой и принимаю 
+            Соглашаюсь с рассылкой и принимаю
           </label>
           <a class="checkbox__link" href="#">Условия договора</a>
         </div>
@@ -484,6 +490,8 @@
   </div>
 
   <script src="./js/modal.js">
+  </script>
+  <script src="./js/menu.js">
   </script>
 </body>
 
