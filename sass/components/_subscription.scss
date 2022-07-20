@@ -1,15 +1,12 @@
-.subscription {
-  padding-top: 72px;
-  padding-bottom: 94px;
-  margin-left: 93px;
-}
-.subscription__form {
-  align-items: center;
-  justify-content: center;
-}
+// .subscription__form {
+//   align-items: center;
+//   justify-content: center;
+// }
+
 .subscription__input {
-  min-width: 358px;
-  max-height: 50px;
+  display: block;
+  width: 100%;
+  max-width: 450px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: inherit;
@@ -20,12 +17,21 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline-width: 0px;
+
   padding: 15px 16px;
-  margin-right: 12px;
+  margin: 0 auto 20px;
+
+  @media (min-width: 1200px) {
+    display: inline-block;
+    width: 358px;
+    margin-right: 12px;
+  }
 }
+
 .subscription__input:focus {
   border: 1px solid $color-white;
 }
+
 .subscription__button {
   position: relative;
   display: inline-block;
@@ -34,6 +40,7 @@
 
   padding: 10px 62px 10px 29px;
 }
+
 .subscription__icon {
   position: absolute;
   top: 50%;

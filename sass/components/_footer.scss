@@ -1,6 +1,33 @@
 footer {
   background-color: $background-color-footer;
 }
+
 .footer {
-  // display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+  }
+}
+
+.footer__contacts {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+  }
 }

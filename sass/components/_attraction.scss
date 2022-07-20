@@ -1,25 +1,39 @@
 .attraction {
-  padding-top: 72px;
-  padding-bottom: 100px;
+  @media (max-width: 767px) {
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 165px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }
+
 .attraction__title,
 .subscription__title {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  text-align: center;
 
   color: $color-white;
   margin-bottom: 20px;
 }
+
 .attraction-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .attraction-list__item:not(:last-child) {
   margin-right: 10px;
 }
+
 .attraction-list__link {
   display: flex;
   justify-content: center;
