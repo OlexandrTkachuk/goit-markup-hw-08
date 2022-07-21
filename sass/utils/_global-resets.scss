@@ -6,6 +6,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+
+  &.modal-open {
+    overflow: hidden;
+  }
   &.menu-open {
     overflow: hidden;
   }
