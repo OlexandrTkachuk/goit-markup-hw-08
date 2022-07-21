@@ -6,6 +6,9 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 h1,
 h2,
