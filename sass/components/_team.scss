@@ -69,14 +69,16 @@
 .social-list {
   display: flex;
 
-  padding-left: 32px;
-  padding-right: 32px;
-
-  @media screen and (min-width: 480px) {
+  @media (max-width: 1199px) {
     margin: 16px auto 24px;
     padding: 0;
   }
+
+  @media (min-width: 1200px) {
+    margin: 16px auto 30px;
+  }
 }
+
 .social-list__item {
   // display: flex;
   &:not(:last-child) {

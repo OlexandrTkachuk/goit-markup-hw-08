@@ -45,6 +45,7 @@
 
 .modal__icon {
   fill: $color-black;
+  -webkit-fill: black;
   transition: fill 250ms $timing-function;
 
   &:hover,
