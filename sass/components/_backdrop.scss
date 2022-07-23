@@ -10,7 +10,7 @@
 
   overflow-y: scroll;
   opacity: 1;
-  // visibility: none;
+  visibility: none;
 
   transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
 }
