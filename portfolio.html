@@ -136,13 +136,34 @@
           <ul class="galery-list">
             <li class="galery-list__item">
               <div class="galery-list__thumb">
-                <img
-                  srcset="./images/port-1.jpg 1x, ./images/port-1x2.jpg 2x"
-                  class="galery-list__img"
-                  src="./images/port-1.jpg"
-                  alt="ноутбук"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/galery/mobile/tehno@1x.jpg 1x,
+                      ./images/galery/mobile/tehno@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/tablet/tehno@1x.jpg 1x,
+                      ./images/galery/tablet/tehno@2x.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/desctop/tehno@1x.jpg 1x,
+                      ./images/galery/desctop/tehno@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="galery-list__img"
+                    src="./images/galery/desctop/tehno@1x.jpg"
+                    alt="технокряк"
+                  />
+                </picture>
                 <p class="galery-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -154,15 +175,37 @@
                 <p class="galery-list__type">Веб-сайт</p>
               </div>
             </li>
+
             <li class="galery-list__item">
               <div class="galery-list__thumb">
-                <img
-                  class="galery-list__img"
-                  srcset="./images/port-2.jpg 1x, ./images/port-2x2.jpg 2x"
-                  src="./images/port-2.jpg"
-                  alt="два парня играют в баскетбол"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/galery/mobile/basketball@1x.jpg 1x,
+                      ./images/galery/mobile/basketball@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/tablet/basketball@1x.jpg 1x,
+                      ./images/galery/tablet/basketball@2x.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/desctop/basketball@1x.jpg 1x,
+                      ./images/galery/desctop/basketball@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="galery-list__img"
+                    src="./images/galery/desctop/basketball@1x.jpg"
+                    alt="баскетбольный матч"
+                  />
+                </picture>
                 <p class="galery-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -174,15 +217,37 @@
                 <p class="galery-list__type">Дизайн</p>
               </div>
             </li>
+
             <li class="galery-list__item">
               <div class="galery-list__thumb">
-                <img
-                  class="galery-list__img"
-                  srcset="./images/port-3.jpg 1x, ./images/port-3x2.jpg 2x"
-                  src="./images/port-3.jpg"
-                  alt="марка рыбного ресторана The Seafood"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/galery/mobile/seafood@1x.jpg 1x,
+                      ./images/galery/mobile/seafood@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/tablet/seafood@1x.jpg 1x,
+                      ./images/galery/tablet/seafood@2x.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/desctop/seafood@1x.jpg 1x,
+                      ./images/galery/desctop/seafood@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="galery-list__img"
+                    src="./images/galery/desctop/seafood@1x.jpg"
+                    alt="Seafood"
+                  />
+                </picture>
                 <p class="galery-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -194,15 +259,37 @@
                 <p class="galery-list__type">Приложение</p>
               </div>
             </li>
+
             <li class="galery-list__item">
               <div class="galery-list__thumb">
-                <img
-                  class="galery-list__img"
-                  srcset="./images/port-4.jpg 1x, ./images/port-4x2.jpg 2x"
-                  src="./images/port-4.jpg"
-                  alt="наушники"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/galery/mobile/headphones@1x.jpg 1x,
+                      ./images/galery/mobile/headphones@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/tablet/headphones@1x.jpg 1x,
+                      ./images/galery/tablet/headphones@2x.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/desctop/headphones@1x.jpg 1x,
+                      ./images/galery/desctop/headphones@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="galery-list__img"
+                    src="./images/galery/desctop/headphones@1x.jpg"
+                    alt="наушники"
+                  />
+                </picture>
                 <p class="galery-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -214,15 +301,37 @@
                 <p class="galery-list__type">Маркетинг</p>
               </div>
             </li>
+
             <li class="galery-list__item">
               <div class="galery-list__thumb">
-                <img
-                  class="galery-list__img"
-                  srcset="./images/port-5.jpg 1x, ./images/port-5x2.jpg 2x"
-                  src="./images/port-5.jpg"
-                  alt="две прямоугольные коробки"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/galery/mobile/boxes@1x.jpg 1x,
+                      ./images/galery/mobile/boxes@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/tablet/boxes@1x.jpg 1x,
+                      ./images/galery/tablet/boxes@2x.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/desctop/boxes@1x.jpg 1x,
+                      ./images/galery/desctop/boxes@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="galery-list__img"
+                    src="./images/galery/desctop/boxes@1x.jpg"
+                    alt="Boxes"
+                  />
+                </picture>
                 <p class="galery-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -234,15 +343,37 @@
                 <p class="galery-list__type">Приложение</p>
               </div>
             </li>
+
             <li class="galery-list__item">
               <div class="galery-list__thumb">
-                <img
-                  class="galery-list__img"
-                  srcset="./images/port-6.jpg 1x, ./images/port-6x2.jpg 2x"
-                  src="./images/port-6.jpg"
-                  alt="экран монитора"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/galery/mobile/monitor@1x.jpg 1x,
+                      ./images/galery/mobile/monitor@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/tablet/monitor@1x.jpg 1x,
+                      ./images/galery/tablet/monitor@2x.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/desctop/monitor@1x.jpg 1x,
+                      ./images/galery/desctop/monitor@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="galery-list__img"
+                    src="./images/galery/desctop/monitor@1x.jpg"
+                    alt="монитор"
+                  />
+                </picture>
                 <p class="galery-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -254,15 +385,37 @@
                 <p class="galery-list__type">Веб-сайт</p>
               </div>
             </li>
+
             <li class="galery-list__item">
               <div class="galery-list__thumb">
-                <img
-                  class="galery-list__img"
-                  srcset="./images/port-7.jpg 1x, ./images/port-7x2.jpg 2x"
-                  src="./images/port-7.jpg"
-                  alt="открытая книга"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/galery/mobile/wallpapper@1x.jpg 1x,
+                      ./images/galery/mobile/wallpapper@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/tablet/wallpapper@1x.jpg 1x,
+                      ./images/galery/tablet/wallpapper@2x.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/desctop/wallpapper@1x.jpg 1x,
+                      ./images/galery/desctop/wallpapper@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="galery-list__img"
+                    src="./images/galery/desctop/wallpapper@1x.jpg"
+                    alt="открытая книга"
+                  />
+                </picture>
                 <p class="galery-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -274,15 +427,37 @@
                 <p class="galery-list__type">Дизайн</p>
               </div>
             </li>
+
             <li class="galery-list__item">
               <div class="galery-list__thumb">
-                <img
-                  class="galery-list__img"
-                  srcset="./images/port-8.jpg 1x, ./images/port-8x2.jpg 2x"
-                  src="./images/port-8.jpg"
-                  alt="бирка брэнда Lab"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/galery/mobile/lab@1x.jpg 1x,
+                      ./images/galery/mobile/lab@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/tablet/lab@1x.jpg 1x,
+                      ./images/galery/tablet/lab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/desctop/lab@1x.jpg 1x,
+                      ./images/galery/desctop/lab@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="galery-list__img"
+                    src="./images/galery/desctop/lab@1x.jpg"
+                    alt="LAB"
+                  />
+                </picture>
                 <p class="galery-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -294,15 +469,37 @@
                 <p class="galery-list__type">Маркетинг</p>
               </div>
             </li>
+
             <li class="galery-list__item">
               <div class="galery-list__thumb">
-                <img
-                  class="galery-list__img"
-                  srcset="./images/port-9.jpg 1x, ./images/port-9x2.jpg 2x"
-                  src="./images/port-9.jpg"
-                  alt="человек работает за ноутбуком"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/galery/mobile/notebook@1x.jpg 1x,
+                      ./images/galery/mobile/notebook@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/tablet/notebook@1x.jpg 1x,
+                      ./images/galery/tablet/notebook@2x.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/galery/desctop/notebook@1x.jpg 1x,
+                      ./images/galery/desctop/notebook@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="galery-list__img"
+                    src="./images/galery/desctop/notebook@1x.jpg"
+                    alt="ноутбук"
+                  />
+                </picture>
                 <p class="galery-list__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном

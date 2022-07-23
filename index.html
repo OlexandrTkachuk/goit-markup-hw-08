@@ -180,34 +180,47 @@
           <ul class="work-list">
             <li class="work-list__item">
               <div class="work-list__thumb">
-                <img
-                  srcset="./images/img1-1.jpg 1x, ./images/img1-1x2.jpg 2x"
-                  src="./images/img1-1.jpg"
-                  alt="Работа с компьютером"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/work/desctop@1x.jpg 1x, ./images/work/desctop@2x.jpg 2x"
+                  />
+                  <img
+                    src="./images/work/desctop@1x.jpg"
+                    alt="Работа с компьютером"
+                    width="370px"
+                    height="294px"
+                  />
+                </picture>
                 <h3 class="work-list__subtitle">Десктопные приложения</h3>
               </div>
             </li>
+
             <li class="work-list__item">
               <div class="work-list__thumb">
-                <img
-                  srcset="./images/img1-2.jpg 1x, ./images/img1-2x2.jpg 2x"
-                  src="./images/img1-2.jpg"
-                  alt="Работа с телефоном"
-                  width="370"
-                />
+                <picture>
+                  <source srcset="./images/work/mobile@1x.jpg 1x, ./images/work/mobile@2x.jpg 2x" />
+                  <img
+                    src="./images/work/mobile@1x.jpg"
+                    alt="Работа с телефоном"
+                    width="370px"
+                    height="294px"
+                  />
+                </picture>
                 <h3 class="work-list__subtitle">Мобильные приложения</h3>
               </div>
             </li>
+
             <li class="work-list__item">
               <div class="work-list__thumb">
-                <img
-                  srcset="./images/img1-3.jpg 1x, ./images/img1-3x2.jpg 2x"
-                  src="./images/img1-3.jpg"
-                  alt="Работа с планшетом"
-                  width="370"
-                />
+                <picture>
+                  <source srcset="./images/work/design@1x.jpg 1x, ./images/work/design@2x.jpg 2x" />
+                  <img
+                    src="./images/work/design@1x.jpg"
+                    alt="Работа с планшетом"
+                    width="370px"
+                    height="294px"
+                  />
+                </picture>
                 <h3 class="work-list__subtitle">Дизайнерские решения</h3>
               </div>
             </li>
@@ -221,12 +234,30 @@
           <h2 class="team__title title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img
-                srcset="./images/img2-1.jpg 1x, ./images/img2-1x2.jpg 2x"
-                src="./images/img2-1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/mobile/designer@1x.jpg 1x,
+                    ./images/team/mobile/designer@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/designer@1x.jpg 1x,
+                    ./images/team/tablet/designer@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/desctop/designer@1x.jpg 1x,
+                    ./images/team/desctop/designer@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/team/mobile/designer@1x.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <h3 class="team-list__name">Игорь Демьяненко</h3>
               <p class="team-list__pos">Product Designer</p>
               <ul class="social-list">
@@ -280,13 +311,32 @@
                 </li>
               </ul>
             </li>
+
             <li class="team-list__item">
-              <img
-                srcset="./images/img2-2.jpg 1x, ./images/img2-2x2.jpg 2x"
-                src="./images/img2-2.jpg"
-                alt="Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/mobile/developer@1x.jpg 1x,
+                    ./images/team/mobile/developer@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/developer@1x.jpg 1x,
+                    ./images/team/tablet/developer@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/desctop/developer@1x.jpg 1x,
+                    ./images/team/desctop/developer@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/team/mobile/developer@1x.jpg" alt="Ольга Репина" />
+              </picture>
               <h3 class="team-list__name">Ольга Репина</h3>
               <p class="team-list__pos">Frontend Developer</p>
               <ul class="social-list">
@@ -340,13 +390,32 @@
                 </li>
               </ul>
             </li>
+
             <li class="team-list__item">
-              <img
-                srcset="./images/img2-3.jpg 1x, ./images/img2-3x2.jpg 2x"
-                src="./images/img2-3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/mobile/marketing@1x.jpg 1x,
+                    ./images/team/mobile/marketing@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/marketing@1x.jpg 1x,
+                    ./images/team/tablet/marketing@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/desctop/marketing@1x.jpg 1x,
+                    ./images/team/desctop/marketing@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/team/mobile/marketing@1x.jpg" alt="Николай Тарасов" />
+              </picture>
               <h3 class="team-list__name">Николай Тарасов</h3>
               <p class="team-list__pos">Marketing</p>
               <ul class="social-list">
@@ -400,13 +469,32 @@
                 </li>
               </ul>
             </li>
+
             <li class="team-list__item">
-              <img
-                srcset="./images/img2-4.jpg 1x, ./images/img2-4x2.jpg 2x"
-                src="./images/img2-4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/mobile/uidesigner@1x.jpg 1x,
+                    ./images/team/mobile/uidesigner@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/uidesigner@1x.jpg 1x,
+                    ./images/team/tablet/uidesigner@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/desctop/uidesigner@1x.jpg 1x,
+                    ./images/team/desctop/uidesigner@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/team/mobile/uidesigner@1x.jpg" alt="Михаил Ермаков" />
+              </picture>
               <h3 class="team-list__name">Михаил Ермаков</h3>
               <p class="team-list__pos">UI Designer</p>
               <ul class="social-list">
