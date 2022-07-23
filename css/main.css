@@ -511,6 +511,7 @@ ul {
   padding-top: 118px;
   padding-bottom: 118px;
   margin: 0 auto;
+  width: 100%;
   max-width: 1600px;
   background-color: #2f303a;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.jpg);
@@ -655,7 +656,10 @@ ul {
 }
 
 .team {
+  width: 100%;
+  max-width: 1600px;
   background-color: #f5f4fa;
+  margin: 0 auto;
 }
 
 .team__title {
@@ -832,18 +836,14 @@ ul {
   border-color: #2196f3;
 }
 
-footer {
-  background-color: #2f303a;
-}
-
 .footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
+  width: 100%;
+  max-width: 1600px;
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
   margin: 0 auto;
@@ -856,10 +856,10 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     text-align: start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -871,9 +871,9 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     margin-bottom: 60px;
   }
 }

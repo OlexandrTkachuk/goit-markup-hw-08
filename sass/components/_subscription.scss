@@ -1,8 +1,3 @@
-// .subscription__form {
-//   align-items: center;
-//   justify-content: center;
-// }
-
 .subscription__input {
   display: block;
   width: 100%;
@@ -26,7 +21,7 @@
     width: 358px;
     margin-right: 12px;
   }
-}
+} 
 
 .subscription__input:focus {
   border: 1px solid $color-white;

@@ -1,11 +1,9 @@
-footer {
-  background-color: $background-color-footer;
-}
-
 .footer {
   justify-content: center;
-  align-items: center;
   text-align: center;
+  width: 100%;
+  max-width: 1600px;
+  background-color: $background-color-footer;
 
   padding-top: 60px;
   padding-bottom: 60px;
@@ -14,8 +12,8 @@ footer {
   @media (min-width: 1200px) {
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: start;
+    align-items: baseline;
   }
 }
 
@@ -23,7 +21,7 @@ footer {
   @media (min-width: 768px) {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     margin-bottom: 60px;
   }
 

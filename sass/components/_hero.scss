@@ -3,6 +3,7 @@
   padding-top: 118px;
   padding-bottom: 118px;
   margin: 0 auto;
+  width: 100%;
   max-width: 1600px;
 
   background-color: #2f303a;
@@ -28,7 +29,7 @@
 
   margin: 0 auto 30px;
 
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
