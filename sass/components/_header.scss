@@ -144,7 +144,7 @@
   font-weight: 500;
   letter-spacing: 0.02em;
 
-  padding: 20px 0;
+  padding: 33px 0;
   transition: color 250ms $timing-function;
 
   &:hover,
@@ -281,6 +281,10 @@
   &:hover,
   &:focus {
     fill: $color-blue;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
   }
 }
 
